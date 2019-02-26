@@ -7,16 +7,22 @@
 //
 
 #import "ViewController.h"
+#import "WFRender.h"
+#import <Metal/Metal.h>
+#import <MetalKit/MetalKit.h>
+#import "WFMetalView.h"
 
 @interface ViewController ()
-
+{
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    WFMetalView *metalView = [[WFMetalView alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.view addSubview:metalView];
 }
 
 

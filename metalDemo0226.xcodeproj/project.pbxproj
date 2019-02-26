@@ -15,6 +15,9 @@
 		E2F72AD1222578C800588D81 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F72AD0222578C800588D81 /* main.m */; };
 		E2F72ADB222578C800588D81 /* metalDemo0226Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F72ADA222578C800588D81 /* metalDemo0226Tests.m */; };
 		E2F72AE6222578C800588D81 /* metalDemo0226UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F72AE5222578C800588D81 /* metalDemo0226UITests.m */; };
+		E2F72AF5222578E100588D81 /* WFRender.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F72AF4222578E100588D81 /* WFRender.m */; };
+		E2F72AF7222580C500588D81 /* shader.metal in Sources */ = {isa = PBXBuildFile; fileRef = E2F72AF6222580C500588D81 /* shader.metal */; };
+		E2F72AFB2225904E00588D81 /* WFMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F72AFA2225904E00588D81 /* WFMetalView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		E2F72AE1222578C800588D81 /* metalDemo0226UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = metalDemo0226UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F72AE5222578C800588D81 /* metalDemo0226UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = metalDemo0226UITests.m; sourceTree = "<group>"; };
 		E2F72AE7222578C800588D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2F72AF3222578E100588D81 /* WFRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFRender.h; sourceTree = "<group>"; };
+		E2F72AF4222578E100588D81 /* WFRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFRender.m; sourceTree = "<group>"; };
+		E2F72AF6222580C500588D81 /* shader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shader.metal; sourceTree = "<group>"; };
+		E2F72AF822258A3D00588D81 /* shadertypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shadertypes.h; sourceTree = "<group>"; };
+		E2F72AF92225904E00588D81 /* WFMetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFMetalView.h; sourceTree = "<group>"; };
+		E2F72AFA2225904E00588D81 /* WFMetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFMetalView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				E2F72AC2222578C800588D81 /* AppDelegate.m */,
 				E2F72AC4222578C800588D81 /* ViewController.h */,
 				E2F72AC5222578C800588D81 /* ViewController.m */,
+				E2F72AF92225904E00588D81 /* WFMetalView.h */,
+				E2F72AFA2225904E00588D81 /* WFMetalView.m */,
+				E2F72AF6222580C500588D81 /* shader.metal */,
+				E2F72AF822258A3D00588D81 /* shadertypes.h */,
+				E2F72AF3222578E100588D81 /* WFRender.h */,
+				E2F72AF4222578E100588D81 /* WFRender.m */,
 				E2F72AC7222578C800588D81 /* Main.storyboard */,
 				E2F72ACA222578C800588D81 /* Assets.xcassets */,
 				E2F72ACC222578C800588D81 /* LaunchScreen.storyboard */,
@@ -264,7 +279,10 @@
 			files = (
 				E2F72AC6222578C800588D81 /* ViewController.m in Sources */,
 				E2F72AD1222578C800588D81 /* main.m in Sources */,
+				E2F72AF5222578E100588D81 /* WFRender.m in Sources */,
 				E2F72AC3222578C800588D81 /* AppDelegate.m in Sources */,
+				E2F72AF7222580C500588D81 /* shader.metal in Sources */,
+				E2F72AFB2225904E00588D81 /* WFMetalView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,7 +460,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = whf.metalDemo0226;
+				PRODUCT_BUNDLE_IDENTIFIER = whf.whf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -459,7 +477,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = whf.metalDemo0226;
+				PRODUCT_BUNDLE_IDENTIFIER = whf.whf;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
